@@ -1,0 +1,76 @@
+header:
+{
+    height:20px;
+}
+#content .active {
+  max-height: 1500px;
+  overflow: hidden;
+}
+
+.session-info div {
+  margin: 1.333em 0;
+}
+
+#content .active div {
+  opacity: 1;
+}
+
+.session-info div div {
+  margin: 0;
+}
+
+.session-info h3 {
+  min-height: 60px;
+}
+
+.session-info h3.fn {
+  min-height: 0;
+}
+.loading{
+    position: relative;
+  text-align:center;
+    
+}
+.loading img {
+    height: 40px;
+}
+.session{
+  width: auto;
+  clear: both;
+  float: none;  
+}
+
+/*--C O M M E N T S--*/
+.session strong{margin-left: 26px;}
+#content .comment-list li:before {
+  content:normal;
+}
+#content .comment-list .comment {
+  border-top: 1px solid #dee2e7;
+}
+#content .comment-content header {
+    color: #39c;
+    height:auto;
+    padding:5px 0;
+    line-height: 16px;
+    font-size: 12px;
+    position: relative;
+}
+#content .children
+{
+    margin-top:10px;
+}
+#content .comment-content .bullet {
+    padding: 0 3px;
+    font-size: 75%;
+    color: #ccc;
+    line-height: 1.4;
+}
+.error
+{
+    color:Red;
+    width:100%;
+    text-align:center;
+    padding-top:100px;
+    
+}
