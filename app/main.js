@@ -40,7 +40,7 @@ function (namespace, $, Backbone, Tweet) {
                         $("#content").html('<div class="error">Sorry, something went wrong... try to <a href="/index.html">reload the page</a></div>');
                     }
                 })//end of fetch
-            }
+
 
         }
     });
