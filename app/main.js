@@ -21,8 +21,9 @@ function (namespace, $, Backbone, Tweet) {
 
         index: function () {
             $("#content").html('<div class="loading"><img src="loading.gif"></div>');
-            try {
+
                 Library.fetch({
+                    timeout:1000,
                     success: function () {
                         var view = new Tweet.Views.List({ collection: Library });
 
@@ -36,13 +37,11 @@ function (namespace, $, Backbone, Tweet) {
 
                     error: function (response) {
 
-                        $("#content").html('<div class="error">Sorry, something is gone wrong... try to reload the page</div>');
+                        $("#content").html('<div class="error">Sorry, something went wrong... try to <a href="/index.html">reload the page</a></div>');
                     }
                 })//end of fetch
             }
-            catch (ex) {
-                $("#content").html('<div class="error">Sorry, something is gone wrong... try to reload the page</div>');
-            }
+
         }
     });
 
