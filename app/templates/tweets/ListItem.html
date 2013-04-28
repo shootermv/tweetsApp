@@ -1,8 +1,10 @@
 <h3 class="fn"><%= tweet.user %></h3>
 <h3><%= tweet.title %></h3>
 <% if(tweet.comments=='discuss'){%>
-  <span class="commentspan">0 comments</span>
-<%}%>
+  <span class="commentsspan">0 comments</span>
+<%}else{%>
+  <span class="commentsspan"><%= tweet.comments %></span>
+<%} %>
 <div class="speaker"> 
 						
 	<img width="65" height="65" alt="Photo of the Author" class="photo" src="photo.png"> 

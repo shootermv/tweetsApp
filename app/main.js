@@ -37,7 +37,7 @@ function (namespace, $, Backbone, Tweet) {
 
                     error: function (response) {
 
-                        $("#content").html('<div class="error">Sorry, something went wrong... try to <a href="/index.html">reload the page</a></div>');
+                        $("#content").html('<div class="error">Sorry, something went wrong... try to <a href="index.html">reload the page</a></div>');
                     }
                 })//end of fetch
 
